@@ -1,0 +1,8 @@
+{
+  "name": "AppCrm",
+  "integrations": {
+    "capacitor": {},
+    "cordova": {}
+  },
+  "type": "angular"
+}

@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>用户注册</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content padding>
+  <ion-list>
+    <ion-item>
+      <ion-label position="floating" color="primary">手机号码</ion-label>
+      <ion-input type="text"[(ngModel)]="mobile"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">用户昵称</ion-label>
+      <ion-input type="text"[(ngModel)]="nickname"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">密码</ion-label>
+      <ion-input type="password" [(ngModel)]="password"></ion-input>
+    </ion-item>
+    <ion-item>
+      <ion-label position="floating" color="primary">确认密码</ion-label>
+      <ion-input type="password" [(ngModel)]="repassword"></ion-input>
+    </ion-item>
+  </ion-list>
+
+  <div padding>
+    <ion-button expand="full"  color="primary" (click)="register()">注册</ion-button>
+  </div>
+  <div padding text-center>
+    <ion-button  expand="fill" fill="outline" (click)="pushLogin()"> 已有账户？登录</ion-button>
+  </div>
+</ion-content>
