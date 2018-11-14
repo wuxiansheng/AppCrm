@@ -11,8 +11,9 @@
       <ion-input type="text"[(ngModel)]="mobile"></ion-input>
     </ion-item>
     <ion-item>
-      <ion-label position="floating" color="primary">用户昵称</ion-label>
-      <ion-input type="text"[(ngModel)]="nickname"></ion-input>
+      <ion-label position="floating" color="primary">验证码</ion-label>
+      <ion-input type="number"[(ngModel)]="verifyCode"></ion-input>
+      <button item-right ion-button clear (click)="getCode()" [disabled]="!verifyCode.disable">{{verifyCode.verifyCodeTips}}</button>
     </ion-item>
     <ion-item>
       <ion-label position="floating" color="primary">密码</ion-label>
